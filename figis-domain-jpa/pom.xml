@@ -6,7 +6,7 @@
 		<artifactId>figis-db</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>figis-domain</artifactId>
+	<artifactId>figis-domain-jpa</artifactId>
 
 
 </project>

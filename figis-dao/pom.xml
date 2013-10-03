@@ -14,5 +14,9 @@
 			<groupId>org.fao.fi.figis</groupId>
 			<artifactId>figis-configuration</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.fao.fi.figis</groupId>
+			<artifactId>figis-domain-jpa</artifactId>
+		</dependency>
 	</dependencies>
 </project>

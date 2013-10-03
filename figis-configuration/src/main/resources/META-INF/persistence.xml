@@ -6,13 +6,7 @@
 	<persistence-unit name="figis-persistence">
 
 		<!-- reference tables -->
-		<class>org.fao.fi.figis.domain.RefVme</class>
-		<class>org.fao.fi.figis.domain.RefWaterArea</class>
-
-		<!-- factsheet tables -->
-		<class>org.fao.fi.figis.domain.VmeObservation</class>
-		<class>org.fao.fi.figis.domain.Observation</class>
-		<class>org.fao.fi.figis.domain.ObservationXml</class>
+		<class>org.fao.fi.figis.domain.ref.FicItem</class>
 
 
 		<properties>

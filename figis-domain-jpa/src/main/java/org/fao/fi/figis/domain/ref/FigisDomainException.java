@@ -1,4 +1,4 @@
-package org.fao.fi.figis;
+package org.fao.fi.figis.domain.ref;
 
 /**
  * Generic vme runtime exception. Vme so far does not have checked exceptions, the idea behind is that checked
