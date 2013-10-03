@@ -6,7 +6,13 @@
 		<artifactId>figis-db</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>figis-domain</artifactId>
+	<artifactId>figis-dao</artifactId>
 
 
+	<dependencies>
+		<dependency>
+			<groupId>org.fao.fi.figis</groupId>
+			<artifactId>figis-configuration</artifactId>
+		</dependency>
+	</dependencies>
 </project>
