@@ -1,4 +1,4 @@
-package org.fao.fi.vme.dao.config;
+package org.fao.fi.figis.dao.config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,7 +8,8 @@ import java.lang.annotation.Target;
 import javax.inject.Qualifier;
 
 /**
- * Annotation to indicate that here a link to the vme DB is needed.
+ * 
+ * Annotation to be used that the figis DB needs to be used.
  * 
  * @author Erik van Ingen
  * 
@@ -16,5 +17,5 @@ import javax.inject.Qualifier;
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD, ElementType.TYPE, ElementType.METHOD })
-public @interface VmeDB {
+public @interface FigisDB {
 }

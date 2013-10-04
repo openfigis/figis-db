@@ -6,7 +6,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.persistence.EntityManager;
 
-import org.fao.fi.vme.dao.config.FigisDB;
+import org.fao.fi.figis.dao.config.FigisDB;
 
 /**
  * The dao in order to dconnect to the Figis database. Connection details to be

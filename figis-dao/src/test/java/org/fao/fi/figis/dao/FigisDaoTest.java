@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import javax.inject.Inject;
 
+import org.fao.fi.figis.dao.config.FigisDataBaseProducer;
 import org.fao.fi.figis.domain.ref.FicItem;
-import org.fao.fi.vme.dao.config.FigisDataBaseProducer;
 import org.jglue.cdiunit.ActivatedAlternatives;
 import org.jglue.cdiunit.CdiRunner;
 import org.junit.Test;

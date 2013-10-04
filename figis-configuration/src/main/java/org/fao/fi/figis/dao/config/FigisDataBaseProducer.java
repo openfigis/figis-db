@@ -1,4 +1,4 @@
-package org.fao.fi.vme.dao.config;
+package org.fao.fi.figis.dao.config;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Alternative;
