@@ -27,7 +27,7 @@ public class FigisDao extends Dao {
 	private EntityManager em;
 
 	public List<?> loadObjects(Class<?> clazz) {
-		return this.generateTypedQuery(em, clazz).getResultList();
+		return this.generateTypedQuery(clazz).getResultList();
 	}
 
 	public Object find(Class<?> clazz, Object id) {
@@ -50,6 +50,11 @@ public class FigisDao extends Dao {
 		em.getTransaction().begin();
 		em.remove(object);
 		em.getTransaction().commit();
+	}
+
+	@Override
+	EntityManager getEntityManager() {
+		return this.em;
 	}
 
 }
