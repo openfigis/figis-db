@@ -1,97 +1,102 @@
 package org.fao.fi.figis.domain.ref;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 /**
  * The persistent class for the FIC_ITEM database table.
  * 
  */
 @Entity
-@Table(name="FIC_ITEM")
-@NamedQuery(name="FicItem.findAll", query="SELECT f FROM FicItem f")
+@Table(name = "FIC_ITEM")
+@NamedQuery(name = "FicItem.findAll", query = "SELECT f FROM FicItem f")
 public class FicItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="FIC_ITEM")
+	@Column(name = "FIC_ITEM")
 	private long ficItem;
 
+	@Column(columnDefinition = "char")
 	private String alpha3code;
 
 	private String author;
 
-	@Column(name="ENTRY_STATUS")
+	@Column(name = "ENTRY_STATUS", columnDefinition = "char")
 	private String entryStatus;
 
-	@Column(name="FAOMAP_LAYER_ID")
+	@Column(name = "FAOMAP_LAYER_ID")
 	private BigDecimal faomapLayerId;
 
-	@Column(name="FIC_SYS_ITEM")
+	@Column(name = "FIC_SYS_ITEM")
 	private String ficSysItem;
 
-	@Column(name="FULL_NAME_A")
+	@Column(name = "FULL_NAME_A")
 	private String fullNameA;
 
-	@Column(name="FULL_NAME_C")
+	@Column(name = "FULL_NAME_C")
 	private String fullNameC;
 
-	@Column(name="FULL_NAME_E")
+	@Column(name = "FULL_NAME_E")
 	private String fullNameE;
 
-	@Column(name="FULL_NAME_F")
+	@Column(name = "FULL_NAME_F")
 	private String fullNameF;
 
-	@Column(name="FULL_NAME_R")
+	@Column(name = "FULL_NAME_R")
 	private String fullNameR;
 
-	@Column(name="FULL_NAME_S")
+	@Column(name = "FULL_NAME_S")
 	private String fullNameS;
 
-	@Column(name="LONG_NAME_A")
+	@Column(name = "LONG_NAME_A")
 	private String longNameA;
 
-	@Column(name="LONG_NAME_C")
+	@Column(name = "LONG_NAME_C")
 	private String longNameC;
 
-	@Column(name="LONG_NAME_E")
+	@Column(name = "LONG_NAME_E")
 	private String longNameE;
 
-	@Column(name="LONG_NAME_F")
+	@Column(name = "LONG_NAME_F")
 	private String longNameF;
 
-	@Column(name="LONG_NAME_R")
+	@Column(name = "LONG_NAME_R")
 	private String longNameR;
 
-	@Column(name="LONG_NAME_S")
+	@Column(name = "LONG_NAME_S")
 	private String longNameS;
 
 	private BigDecimal meta;
 
-	@Column(name="NAME_A")
+	@Column(name = "NAME_A")
 	private String nameA;
 
-	@Column(name="NAME_C")
+	@Column(name = "NAME_C")
 	private String nameC;
 
-	@Column(name="NAME_E")
+	@Column(name = "NAME_E")
 	private String nameE;
 
-	@Column(name="NAME_F")
+	@Column(name = "NAME_F")
 	private String nameF;
 
-	@Column(name="NAME_R")
+	@Column(name = "NAME_R")
 	private String nameR;
 
-	@Column(name="NAME_S")
+	@Column(name = "NAME_S")
 	private String nameS;
 
-	@Column(name="SCIENTIFIC_NAME")
+	@Column(name = "SCIENTIFIC_NAME")
 	private String scientificName;
 
-	@Column(name="SEMANTIC_ID")
+	@Column(name = "SEMANTIC_ID")
 	private String semanticId;
 
 	private String unit;
